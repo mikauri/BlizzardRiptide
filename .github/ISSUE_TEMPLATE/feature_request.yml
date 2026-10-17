@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest an idea for BlizzardRiptide.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like BlizzardRiptide to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help you or your server?
+    validations:
+      required: false

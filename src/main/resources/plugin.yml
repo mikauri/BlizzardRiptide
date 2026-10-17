@@ -1,0 +1,14 @@
+name: BlizzardRiptide
+main: com.mikauri.blizzardriptide.BlizzardRiptide
+version: 1.0.0
+api-version: '26.2'
+description: Lets Riptide tridents launch you while it is snowing, not just in water or rain.
+commands:
+  blizzardriptide:
+    description: BlizzardRiptide control
+    usage: /<command> [status|reload|toggle]
+    aliases: [br, snowriptide, snowrip]
+permissions:
+  blizzardriptide.admin:
+    description: Allows reloading and toggling BlizzardRiptide
+    default: op

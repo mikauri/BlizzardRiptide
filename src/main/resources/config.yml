@@ -1,0 +1,30 @@
+# ------------------------------------------------------------------
+#  BlizzardRiptide config.yml
+# ------------------------------------------------------------------
+
+# Master switch.
+enabled: true
+
+# Wind-up delay (in ticks) between the right-click and the launch, so it feels
+# like a charge. 20 = 1s. Set to 0 to launch instantly on right-click.
+charge_ticks: 10
+
+# Scales the launch power. 1.0 = vanilla feel (L1=1.5, L2=2.25, L3=3.0 blocks/tick).
+velocity_multiplier: 1.0
+
+# A location counts as "snowing" when the world is storming AND the biome
+# temperature at that spot is below this threshold (vanilla snows below ~0.15).
+snow_temperature_threshold: 0.15
+
+# Require the player to be exposed to the sky (no blocks overhead) to launch.
+require_sky_access: true
+
+# Per-player cooldown between launches, in ticks (20 = 1s). 0 disables.
+cooldown_ticks: 10
+
+# Feedback.
+play_sound: true
+show_particles: true
+
+# Only act in these worlds. Empty = all worlds.
+worlds_whitelist: []

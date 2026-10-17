@@ -1,0 +1,72 @@
+name: Bug report
+description: Something in BlizzardRiptide isn't working right.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! The details below make it much faster to track down.
+        Tip: `/blizzardriptide status` shows whether the plugin thinks it's snowing where you stand.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect to happen instead?
+      placeholder: "It was snowing but right-clicking my Riptide trident did nothing."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to a snowy biome
+        2. Run /weather rain
+        3. Right-click a Riptide III trident outdoors
+    validations:
+      required: false
+
+  - type: input
+    id: biome
+    attributes:
+      label: Biome and location
+      description: Press F3 to see the biome. Were you under a roof or trees?
+      placeholder: "snowy_taiga, outdoors at y=72"
+    validations:
+      required: false
+
+  - type: textarea
+    id: status-output
+    attributes:
+      label: Output of /blizzardriptide status
+      render: text
+    validations:
+      required: false
+
+  - type: input
+    id: server
+    attributes:
+      label: Server software and version
+      description: Run `/version` in game or in the console.
+      placeholder: "Paper 26.3 build 12"
+    validations:
+      required: true
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: BlizzardRiptide version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console errors
+      description: Paste any errors from the server console that mention BlizzardRiptide.
+      render: text
+    validations:
+      required: false
